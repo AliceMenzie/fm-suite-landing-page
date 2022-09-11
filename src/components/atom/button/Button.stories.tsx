@@ -4,7 +4,7 @@ import { Button } from "./Button";
 
 storiesOf("Design System/Atoms/Button", module).add("Primary", () => (
   <Button //type="button"
-    label="Click Me"
+    label="Request Beta Access"
     appearance="plum"
     primary
   />
@@ -13,7 +13,7 @@ storiesOf("Design System/Atoms/Button", module).add("Primary", () => (
 storiesOf("Design System/Atoms/Button", module).add("Secondary", () => (
   <Button
     // type="submit"
-    label="Click Me"
+    label="Request Beta Access"
     appearance="plum"
   />
 ));

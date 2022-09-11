@@ -1,10 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import styled, { createGlobalStyle } from "styled-components";
+import "./App.css";
+import { Button } from "./components/atom/button/Button";
+
+export const GlobalStyle = createGlobalStyle`
+  body {
+    font-family: 'Epilogue', sans-serif;
+    box-sizing: border-box;
+  }
+`;
 
 function App() {
   return (
     <div className="App">
+      <GlobalStyle />
+      <Button label="click me" appearance="delete" />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>

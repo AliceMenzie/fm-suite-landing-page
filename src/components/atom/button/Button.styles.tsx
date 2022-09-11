@@ -12,6 +12,7 @@ interface StyledProps {
 // darkBlue #172339
 
 export const StyledButton = styled.button<StyledProps>`
+  font-family: inherit;
   background: none;
   color: inherit;
   border: none;

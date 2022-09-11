@@ -1,6 +1,14 @@
 import React from "react";
-import { storiesOf } from "@storybook/react";
+import { storiesOf, addDecorator } from "@storybook/react";
 import { Button } from "./Button";
+import { GlobalStyle } from "../../../App";
+
+addDecorator((s) => (
+  <>
+    <GlobalStyle />
+    {s()}
+  </>
+));
 
 storiesOf("Design System/Atoms/Button", module).add("Primary", () => (
   <Button //type="button"

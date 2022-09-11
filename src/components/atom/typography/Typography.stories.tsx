@@ -3,23 +3,38 @@ import { storiesOf } from "@storybook/react";
 import { Typography } from "./Typography";
 
 storiesOf("Design System/Atoms/Typography", module).add("Heading 1", () => (
-  <Typography //type="button"
-    as="h1"
-  >
-    Hello
+  <Typography as="h1" variant="xl">
+    XL text as h1
   </Typography>
 ));
+storiesOf("Design System/Atoms/Typography", module).add(
+  "Bold Heading 1",
+  () => (
+    <Typography bold as="h1" variant="xl">
+      XL text as h1 bold
+    </Typography>
+  )
+);
 storiesOf("Design System/Atoms/Typography", module).add("Heading 2", () => (
-  <Typography //type="button"
-    as="h2"
-  >
-    Hello
+  <Typography as="h2" variant="l">
+    L text as h2
   </Typography>
 ));
+storiesOf("Design System/Atoms/Typography", module).add(
+  "Bold Heading 2",
+  () => (
+    <Typography as="h2" variant="l">
+      L text as h2 bold
+    </Typography>
+  )
+);
 storiesOf("Design System/Atoms/Typography", module).add("Paragraph", () => (
-  <Typography //type="button"
-    as="p"
-  >
-    Hello
+  <Typography as="p" variant="m">
+    M text as paragraph
+  </Typography>
+));
+storiesOf("Design System/Atoms/Typography", module).add("Heading S", () => (
+  <Typography as="h4" variant="s">
+    ante et vulputate volutpat
   </Typography>
 ));

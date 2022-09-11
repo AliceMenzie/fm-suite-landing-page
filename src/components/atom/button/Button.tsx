@@ -9,7 +9,6 @@ export interface ButtonProps {
 export const Button: React.FC<ButtonProps> = ({
   label = "button",
   appearance,
-  // primary = false,
   ...props
 }: ButtonProps) => {
   return (

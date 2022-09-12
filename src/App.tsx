@@ -15,7 +15,6 @@ function App() {
   return (
     <div className="App">
       <GlobalStyle />
-      <Button label="click me" appearance="delete" />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>

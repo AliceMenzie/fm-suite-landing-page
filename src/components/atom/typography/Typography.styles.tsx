@@ -11,6 +11,7 @@ interface StyledProps {
 export const StyledTypography = styled.div<StyledProps>`
   padding: 0;
   margin: 0;
+  display: inline-block;
   /* XL */
   ${(props) =>
     props.variant === "xl" &&
@@ -18,7 +19,7 @@ export const StyledTypography = styled.div<StyledProps>`
   /* L */
   ${(props) =>
     props.variant === "l" &&
-    "font-size: 48px; letter-spacing: -0.5px; line-height: 56px; color: #172339;"}
+    "font-size: 42px; letter-spacing: -0.5px; line-height: 56px; color: #172339;"}
   /* M */
   ${(props) =>
     props.variant === "m" &&

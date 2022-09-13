@@ -6,7 +6,6 @@ import { Typography } from "../../atom/typography/Typography";
 export const Main = () => {
   return (
     <StyledMain>
-      Main
       <StyledContainer>
         <img
           src={manImg}

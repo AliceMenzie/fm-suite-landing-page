@@ -4,6 +4,7 @@ export const StyledMain = styled.main`
   background-color: #172339;
   display: flex;
   flex-direction: column;
+  border-radius: 10px;
 `;
 export const StyledContainer = styled.section`
   background-color: #172339;
@@ -12,7 +13,7 @@ export const StyledContainer = styled.section`
   align-items: start;
 `;
 export const StyledArticle = styled.article`
-  border: 1px solid red;
+  border-radius: 0 0 10px 10px;
   background-color: #172339;
   display: flex;
   flex-direction: column;

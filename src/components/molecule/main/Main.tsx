@@ -10,7 +10,11 @@ export const Main = () => {
         <img
           src={manImg}
           alt="man in red shirt on phone"
-          style={{ alignSelf: "center", marginTop: "-240px" }}
+          style={{
+            alignSelf: "center",
+            marginTop: "-240px",
+            marginBottom: "40px",
+          }}
         />
       </StyledContainer>
       <StyledContainer>
@@ -23,7 +27,13 @@ export const Main = () => {
             works.
           </Typography>
         </Typography>
-        <Typography as="p" variant="quote" appearance="white" light>
+        <Typography
+          as="p"
+          variant="quote"
+          appearance="white"
+          className="txt-center"
+          light
+        >
           “I really like how it is an all-in-one solution that handle many of
           the tasks that you would normally need separate tools to do the same
           job. This thing is a miracle worker.”

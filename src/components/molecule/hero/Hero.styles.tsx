@@ -8,6 +8,7 @@ export const StyledHero = styled.header`
   display: flex;
   flex-direction: column;
   row-gap: 40px;
+  padding-bottom: 290px;
 `;
 export const StyledSection = styled.section<StyledProps>`
   padding: 0;
@@ -23,3 +24,4 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
 `;
+

@@ -1,34 +1,35 @@
-import React from "react";
-import logo from "./logo.svg";
 import styled, { createGlobalStyle } from "styled-components";
-import "./App.css";
-import { Button } from "./components/atom/button/Button";
+import { Landing } from "./components/pages/Landing";
 
 export const GlobalStyle = createGlobalStyle`
   body {
     font-family: 'Epilogue', sans-serif;
     box-sizing: border-box;
   }
+
+  .m-x-16 {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .m-t-24 {
+    margin-top: 24px;
+  }
+  .m-16 {
+    margin: 16px;
+  }
+  .m-b-56 {
+    margin-bottom: 56px;
+  }
+  .txt-center {
+    text-align: center;
+  }
 `;
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <GlobalStyle />
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Landing />
     </div>
   );
 }

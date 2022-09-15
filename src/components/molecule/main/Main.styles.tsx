@@ -7,6 +7,7 @@ export const StyledMain = styled.main`
   border-radius: 10px;
 `;
 export const StyledContainer = styled.section`
+  border-radius: 10px;
   background-color: #172339;
   display: flex;
   justify-content: center;

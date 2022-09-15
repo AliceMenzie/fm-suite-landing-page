@@ -22,6 +22,7 @@ export const Typography = <C extends React.ElementType>({
   light,
   appearance,
   children,
+  className,
   ...props
 }: {
   as?: C;
@@ -30,9 +31,11 @@ export const Typography = <C extends React.ElementType>({
   bold?: boolean;
   appearance?: string;
   light?: boolean;
+  className?: string;
 }) => {
   return (
     <StyledTypography
+      className={className}
       appearance={appearance}
       bold={bold}
       variant={variant}

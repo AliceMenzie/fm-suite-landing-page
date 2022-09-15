@@ -4,16 +4,20 @@ import { Container, StyledHero, StyledSection } from "./Hero.styles";
 import heroImg from "../../../assets/image-hero-landscape.png";
 import curvedLine from "../../../assets/pattern-curved-line-1.svg";
 
-export const Hero = () => {
+interface heroProps {
+  className?: string;
+}
+
+export const Hero = ({ className }: heroProps) => {
   return (
-    <StyledHero>
+    <StyledHero className={className}>
       <StyledSection col>
         <img
           style={{
             width: "45%",
             alignSelf: "end",
-            marginRight: "25px",
-            marginBottom: "-30px",
+            marginRight: "10px",
+            marginBottom: "-20px",
           }}
           src={curvedLine}
           alt="stylish line"
@@ -34,7 +38,7 @@ export const Hero = () => {
         </Typography>
         <Button label="Request Beta Access" primary />
       </StyledSection>
-      <div>
+      <Container>
         <img
           style={{
             width: "343px",
@@ -45,7 +49,7 @@ export const Hero = () => {
           src={heroImg}
           alt="mobile phone"
         />
-      </div>
+      </Container>
       <StyledSection>
         <Container>
           <Typography as="h3" variant="xl" bold>

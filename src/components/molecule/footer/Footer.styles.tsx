@@ -8,6 +8,7 @@ export const StyledFooter = styled.footer`
   justify-content: center;
   padding: 60px 0px;
   row-gap: 25px;
+  margin-top: -10px;
 `;
 
 export const StyledContainer = styled.div`

@@ -12,19 +12,22 @@ interface StyledProps {
 // darkBlue #172339
 
 export const StyledButton = styled.button<StyledProps>`
+  /* all: unset; */
   font-family: inherit;
   background: none;
   color: inherit;
   border: none;
   padding: 0;
-  font: inherit;
+  font-weight: bold;
+  /* font: inherit; use this to chain all font related */
+  font-size: 14px;
   cursor: pointer;
   outline: none;
   background-color: ${(props) => (props.primary ? "#172339" : "transparent")};
   color: ${(props) => (props.primary ? "#FAF8F6" : "#172339")};
   border: ${(props) => (props.primary ? "transparent" : "1px solid #172339")};
-  height: ${(props) => (props.primary ? "3.813rem" : "3.5rem")};
-  width: ${(props) => (props.primary ? "16rem" : "13.688rem")};
+  height: ${(props) => (props.primary ? "3.813rem" : "48px")};
+  width: ${(props) => (props.primary ? "16rem" : "182px")};
   border-radius: 0.313rem;
 
   :hover {

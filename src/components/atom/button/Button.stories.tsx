@@ -1,5 +1,4 @@
-import React from "react";
-import { storiesOf, addDecorator } from "@storybook/react";
+import { addDecorator } from "@storybook/react";
 import { Button } from "./Button";
 import { GlobalStyle } from "../../../App";
 
@@ -10,16 +9,6 @@ addDecorator((s) => (
   </>
 ));
 
-storiesOf("Design System/Atoms/Button", module).add("Primary", () => (
-  <Button //type="button"
-    label="Request Beta Access"
-    primary
-  />
-));
-
-storiesOf("Design System/Atoms/Button", module).add("Secondary", () => (
-  <Button
-    // type="submit"
-    label="Request Beta Access"
-  />
-));
+export default { title: "Design System/Atoms/Button" };
+export const Primary = () => <Button label="Request Beta Access" primary />;
+export const Secondary = () => <Button label="Request Beta Access" />;

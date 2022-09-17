@@ -4,11 +4,7 @@ export const StyledMain = styled.main`
   background-color: #172339;
   display: flex;
   flex-direction: column;
-
   border-radius: 10px;
-  /* padding-top: 240px; */
-  border: 1px solid red;
-  /* height: 930px; */
   @media (min-width: 700px) {
     margin-left: 16px;
     margin-right: 16px;

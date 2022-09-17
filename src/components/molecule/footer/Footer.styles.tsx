@@ -13,11 +13,10 @@ export const StyledFooter = styled.footer`
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
-    /* padding-top: 440px;
-    margin-top: -380px; */
     /* temporary causing white line behind main */
     padding-top: 300px;
     margin-top: -250px;
+    /* ------------- */
     padding-left: 16px;
     padding-right: 16px;
     h5,

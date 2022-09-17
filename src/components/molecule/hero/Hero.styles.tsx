@@ -63,7 +63,7 @@ export const ImgContainer = styled.div`
   flex-direction: column;
   align-items: center;
   @media (min-width: 700px) {
-    transform: translateX(-120px);
+    transform: translateX(-110px);
     z-index: -1;
   }
 `;

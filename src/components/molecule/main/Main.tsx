@@ -1,4 +1,9 @@
-import { StyledContainer, StyledMain, StyledArticle } from "./Main.styles";
+import {
+  StyledContainer,
+  StyledMain,
+  StyledArticle,
+  StyledImgContainer,
+} from "./Main.styles";
 import manImg from "../../../assets/image-jeremy-small.png";
 import styledLine from "../../../assets/pattern-curved-line-2.svg";
 import { Typography } from "../../atom/typography/Typography";
@@ -17,9 +22,13 @@ export const Main = () => {
           }}
         />
       </StyledContainer>
-      <StyledContainer>
-        <img src={styledLine} alt="curved line" />
-      </StyledContainer>
+      <StyledImgContainer>
+        <img
+          style={{ backgroundColor: "#172339" }}
+          src={styledLine}
+          alt="curved line"
+        />
+      </StyledImgContainer>
       <StyledArticle>
         <Typography as="h2" variant="l" appearance="white">
           It just{" "}

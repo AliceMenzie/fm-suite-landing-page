@@ -3,7 +3,7 @@ import styled from "styled-components";
 // import { VariantProps } from "./Typography";
 
 interface StyledProps {
-  // as?: React.ElementType;
+  as?: React.ElementType;
   variant?: string;
   bold?: boolean;
   light?: boolean;
@@ -22,7 +22,14 @@ export const StyledTypography = styled.div<StyledProps>`
   /* L */ // color: #172339;
   ${(props) =>
     props.variant === "l" &&
-    "font-size: 42px; letter-spacing: -0.5px; line-height: 56px;"}
+    `font-size: 42px;
+     letter-spacing: -0.5px;
+     line-height: 56px;
+    @media (min-width: 700px) {
+      font-size: 52px;
+  }
+    
+    `}
   /* M */ //  color: #172339;
   ${(props) =>
     props.variant === "m" &&

@@ -5,17 +5,17 @@ import { StyledTypography } from "./Typography.styles";
 //   children: React.ReactNode;
 // }
 
-// export interface VariantProps {
-//   xl?: string;
-//   l?: string;
-//   m?: string;
-//   s?: string;
-//   quote?: string;
-//   body?: string;
-//   footer?: string;
-// }
+export interface Props {
+  as?: React.ElementType;
+  children: React.ReactNode;
+  variant?: string;
+  bold?: boolean;
+  appearance?: string;
+  light?: boolean;
+  className?: string;
+}
 
-export const Typography = <C extends React.ElementType>({
+export const Typography = ({
   as,
   variant,
   bold,
@@ -24,15 +24,7 @@ export const Typography = <C extends React.ElementType>({
   children,
   className,
   ...props
-}: {
-  as?: C;
-  children: React.ReactNode;
-  variant?: string;
-  bold?: boolean;
-  appearance?: string;
-  light?: boolean;
-  className?: string;
-}) => {
+}: Props) => {
   return (
     <StyledTypography
       className={className}
@@ -40,6 +32,7 @@ export const Typography = <C extends React.ElementType>({
       bold={bold}
       variant={variant}
       light={light}
+      as={as}
       {...props}
     >
       {children}

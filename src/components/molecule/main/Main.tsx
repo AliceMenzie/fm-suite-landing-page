@@ -3,8 +3,10 @@ import {
   StyledMain,
   StyledArticle,
   StyledImgContainer,
+  StyledImg,
 } from "./Main.styles";
 import manImg from "../../../assets/image-jeremy-small.png";
+import manImgDesktop from "../../../assets/image-jeremy-large.png";
 import styledLine from "../../../assets/pattern-curved-line-2.svg";
 import { Typography } from "../../atom/typography/Typography";
 
@@ -12,22 +14,13 @@ export const Main = () => {
   return (
     <StyledMain>
       <StyledContainer>
-        <img
-          src={manImg}
-          alt="man in red shirt on phone"
-          style={{
-            alignSelf: "center",
-            marginTop: "-240px",
-            marginBottom: "40px",
-          }}
-        />
+        <picture>
+          <source media="(min-width: 1000px)" srcSet={manImgDesktop} />
+          <StyledImg src={manImg} alt="man in red shirt on phone" />
+        </picture>
       </StyledContainer>
       <StyledImgContainer>
-        <img
-          style={{ backgroundColor: "#172339" }}
-          src={styledLine}
-          alt="curved line"
-        />
+        <img src={styledLine} alt="curved line" />
       </StyledImgContainer>
       <StyledArticle>
         <Typography as="h2" variant="l" appearance="white">

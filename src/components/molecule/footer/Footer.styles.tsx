@@ -2,6 +2,10 @@ import styled from "styled-components";
 
 export const StyledFooter = styled.footer`
   background-color: #f3ede7;
+`;
+
+export const StyledDiv = styled.div`
+  background-color: #f3ede7;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,6 +32,10 @@ export const StyledFooter = styled.footer`
     h5 {
       font-size: 32px;
     }
+  }
+  @media (min-width: 1100px) {
+    max-width: 1100px;
+    margin: -250px auto;
   }
 `;
 

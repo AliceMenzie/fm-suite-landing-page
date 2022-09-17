@@ -1,4 +1,5 @@
 import styled, { createGlobalStyle } from "styled-components";
+import { Footer } from "./components/molecule/footer/Footer";
 import { Landing } from "./components/pages/Landing";
 
 export const GlobalStyle = createGlobalStyle`
@@ -30,6 +31,7 @@ function App() {
     <div>
       <GlobalStyle />
       <Landing />
+      <Footer />
     </div>
   );
 }

@@ -5,12 +5,17 @@ interface StyledProps {
 }
 
 export const StyledHero = styled.header`
+  max-width: 1110px;
   display: flex;
   flex-direction: column;
   row-gap: 40px;
   padding-bottom: 290px;
   @media (min-width: 700px) {
     row-gap: 80px;
+  }
+  @media (min-width: 1100px) {
+    flex-direction: row;
+    padding-bottom: 330px;
   }
 `;
 export const StyledSection = styled.section<StyledProps>`
@@ -40,6 +45,10 @@ export const StyledRow = styled.section<StyledProps>`
     justify-content: space-around;
     align-items: center;
     width: 100%;
+  }
+  @media (min-width: 1100px) {
+    flex-direction: column;
+    row-gap: 63px;
   }
 `;
 

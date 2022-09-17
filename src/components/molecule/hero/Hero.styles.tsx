@@ -15,7 +15,7 @@ export const StyledHero = styled.header`
   }
   @media (min-width: 1100px) {
     flex-direction: row;
-    padding-bottom: 330px;
+    padding-bottom: 240px;
   }
 `;
 export const StyledSection = styled.section<StyledProps>`

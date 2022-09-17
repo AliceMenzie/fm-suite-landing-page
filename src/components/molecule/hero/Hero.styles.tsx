@@ -9,6 +9,9 @@ export const StyledHero = styled.header`
   flex-direction: column;
   row-gap: 40px;
   padding-bottom: 290px;
+  @media (min-width: 700px) {
+    row-gap: 80px;
+  }
 `;
 export const StyledSection = styled.section<StyledProps>`
   padding: 0;

@@ -1,7 +1,16 @@
 import { Button } from "../../atom/button/Button";
 import { Typography } from "../../atom/typography/Typography";
-import { Container, StyledHero, StyledSection } from "./Hero.styles";
+import {
+  Container,
+  StyledContainer,
+  StyledHero,
+  StyledRow,
+  StyledSection,
+  ImgContainer,
+  StyledImg,
+} from "./Hero.styles";
 import heroImg from "../../../assets/image-hero-landscape.png";
+import heroTablet from "../../../assets/image-hero-portrait.png";
 import curvedLine from "../../../assets/pattern-curved-line-1.svg";
 
 interface heroProps {
@@ -12,45 +21,41 @@ export const Hero = ({ className }: heroProps) => {
   return (
     <StyledHero className={className}>
       <StyledSection col>
-        <img
-          style={{
-            width: "45%",
-            alignSelf: "end",
-            marginRight: "10px",
-            marginBottom: "-20px",
-          }}
-          src={curvedLine}
-          alt="stylish line"
-        />
-        <Typography as="h1" variant="l">
-          A{" "}
-          <Typography as="span" variant="l" bold>
-            super solution
+        <StyledContainer>
+          <StyledImg src={curvedLine} alt="curved line" />
+          <Typography as="h1" variant="l">
+            A{" "}
+            <Typography as="span" variant="l" bold>
+              super solution
+            </Typography>{" "}
+            for your{" "}
+            <Typography as="span" variant="l" bold>
+              business.
+            </Typography>
           </Typography>
-          for your{" "}
-          <Typography as="span" variant="l" bold>
-            business.
+          <Typography as="p" variant="body">
+            Our marketing and sales automations help you scale your outreach to
+            get more leads for your company.
           </Typography>
-        </Typography>
-        <Typography as="p" variant="body">
-          Our marketing and sales automations help you scale your outreach to
-          get more leads for your company.
-        </Typography>
-        <Button label="Request Beta Access" primary />
+          <Button label="Request Beta Access" primary />
+        </StyledContainer>
+        <ImgContainer>
+          <picture>
+            <source media="(min-width: 750px)" srcSet={heroTablet} />
+            <img
+              style={{
+                width: "343px",
+                borderRadius: "10px",
+                objectPosition: "center",
+                objectFit: "cover",
+              }}
+              src={heroImg}
+              alt="mobile phone"
+            />
+          </picture>
+        </ImgContainer>
       </StyledSection>
-      <Container>
-        <img
-          style={{
-            width: "343px",
-            borderRadius: "10px",
-            objectPosition: "center",
-            objectFit: "cover",
-          }}
-          src={heroImg}
-          alt="mobile phone"
-        />
-      </Container>
-      <StyledSection>
+      <StyledRow>
         <Container>
           <Typography as="h3" variant="xl" bold>
             2K+
@@ -75,7 +80,7 @@ export const Hero = ({ className }: heroProps) => {
             Leads
           </Typography>
         </Container>
-      </StyledSection>
+      </StyledRow>
     </StyledHero>
   );
 };

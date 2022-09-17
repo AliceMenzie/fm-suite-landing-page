@@ -38,4 +38,9 @@ export const StyledButton = styled.button<StyledProps>`
       props.primary &&
       "background-image: linear-gradient(159deg, rgba(160,96,255,1) 0%, rgba(203,48,227,1) 35%, rgba(255,168,78,1) 89%);"}
   }
+
+  @media (min-width: 700px) {
+    width: ${(props) => (props.primary ? "16rem" : "219px")};
+  }
+
 `;

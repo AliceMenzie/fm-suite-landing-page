@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/fm-suite-landing-page/static/css/main.e6c13ad2.css",
+    "main.js": "/fm-suite-landing-page/static/js/main.7c5d571f.js",
+    "static/js/787.4e112455.chunk.js": "/fm-suite-landing-page/static/js/787.4e112455.chunk.js",
+    "static/media/image-jeremy-large.png": "/fm-suite-landing-page/static/media/image-jeremy-large.7568e3e8e870bb0a4554.png",
+    "static/media/image-hero-portrait.png": "/fm-suite-landing-page/static/media/image-hero-portrait.4dad9378090c290deea2.png",
+    "static/media/image-jeremy-small.png": "/fm-suite-landing-page/static/media/image-jeremy-small.def3549ba8d843fc5af8.png",
+    "static/media/image-hero-landscape.png": "/fm-suite-landing-page/static/media/image-hero-landscape.f15ce7d15d761d6e51f5.png",
+    "index.html": "/fm-suite-landing-page/index.html",
+    "static/media/icon-instagram.svg": "/fm-suite-landing-page/static/media/icon-instagram.61f109bd84c28852678539deebfc5309.svg",
+    "static/media/icon-twitter.svg": "/fm-suite-landing-page/static/media/icon-twitter.b7b383adeb0f50988ab11b5d28bcb9d6.svg",
+    "static/media/icon-facebook.svg": "/fm-suite-landing-page/static/media/icon-facebook.96b92c21d120825be32fa767879dd1b0.svg",
+    "static/media/pattern-curved-line-2.svg": "/fm-suite-landing-page/static/media/pattern-curved-line-2.b3e7a600581015c6814002a2b1b5992d.svg",
+    "static/media/pattern-curved-line-1.svg": "/fm-suite-landing-page/static/media/pattern-curved-line-1.737baf08aa1b342f22c34fc8ba6387cb.svg",
+    "main.e6c13ad2.css.map": "/fm-suite-landing-page/static/css/main.e6c13ad2.css.map",
+    "main.7c5d571f.js.map": "/fm-suite-landing-page/static/js/main.7c5d571f.js.map",
+    "787.4e112455.chunk.js.map": "/fm-suite-landing-page/static/js/787.4e112455.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.7c5d571f.js"
+  ]
+}
